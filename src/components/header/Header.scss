@@ -1,0 +1,82 @@
+$myColor: #3c3744;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+
+  &-color {
+    background-color: white;
+    border-bottom: 1px solid whitesmoke;
+  }
+}
+
+.headerLeft,
+.headerRight {
+  display: flex;
+}
+
+.headerLeft-logo {
+  margin-left: 40px;
+}
+
+.headerLeft-logo > h1 {
+  margin-top: 5px;
+}
+
+.headerLeft-options {
+  display: flex;
+  color: myColor;
+  margin-left: 40px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.headerLeft-option {
+  margin: 15px;
+  cursor: pointer;
+}
+
+.headerRight {
+  &-options {
+    display: flex;
+    color: myColor;
+    margin-right: 80px;
+  }
+
+  &-option {
+    &-signIn {
+      margin-top: 10px;
+      font-size: 17px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    &-create {
+      margin-left: 15px;
+      border: 1px solid black;
+      padding: 10px 10px;
+      border-radius: 5px;
+      font-size: 17px;
+      font-weight: 500;
+      cursor: pointer;
+      background-color: #5869da;
+      color: white;
+      border: none;
+
+      &:hover {
+        background-color: rgb(14, 13, 13);
+        color: white;
+      }
+    }
+  }
+}
