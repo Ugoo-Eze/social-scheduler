@@ -1,0 +1,40 @@
+$myColor: whitesmoke;
+
+.app__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 5rem;
+  background: var(--color-black);
+  color: $myColor;
+  min-height: 88.3vh;
+
+  &-left {
+    align-items: center;
+    justify-content: center;
+    flex: 0.5;
+    margin-top: 7rem;
+
+    & > h1 {
+      border-bottom: 1px solid gray;
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+      letter-spacing: 0.04em;
+    }
+
+    & > h2 {
+      margin-bottom: 2rem;
+      letter-spacing: 0.04em;
+    }
+
+    & > p {
+        letter-spacing: 0.04em;
+    }
+  }
+
+  &-right {
+    flex: 0.5;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
