@@ -1,6 +1,10 @@
 import React from "react";
 import "./Header.scss";
 
+import { BsInstagram } from "react-icons/bs";
+import { FiTwitter } from "react-icons/fi";
+import { AiOutlineFacebook } from "react-icons/ai";
+
 const Header = () => {
   return (
     <div className="app__header">
@@ -13,11 +17,23 @@ const Header = () => {
           clicks – so you can save time and grow your business and become more
           Productive.
         </p>
+        <button type="button" className="custom__button">
+          Explore more Socials
+        </button>
       </div>
       <div className="app__header-right">
-        <div className="app__header-right_social-links">Instagram</div>
-        <div className="app__header-right_social-links">Twitter</div>
-        <div className="app__header-right_social-links">Facebook</div>
+        <div className="app__header-right_social-links">
+          <BsInstagram size={30} color="whitesmoke" />
+          <span>Instagram</span>
+        </div>
+        <div className="app__header-right_social-links">
+          <FiTwitter size={30} color="whitesmoke" />
+          <span>Twitter</span>
+        </div>
+        <div className="app__header-right_social-links">
+          <AiOutlineFacebook size={30} color="whitesmoke" />
+          <span>Facebook</span>
+        </div>
       </div>
     </div>
   );
