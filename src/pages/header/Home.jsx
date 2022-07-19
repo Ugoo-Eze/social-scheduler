@@ -1,5 +1,5 @@
 import React from "react";
-import "./Header.scss";
+import "./Home.scss";
 
 import { BsInstagram } from "react-icons/bs";
 import { FiTwitter } from "react-icons/fi";
